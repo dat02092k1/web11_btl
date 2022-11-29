@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Roboto Regular Font;
+    src: url(../assets/UI/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto Bold Font;
+    src: url(../assets/UI/fonts/Roboto-Bold.ttf);
+}
+body {
+    margin: 0;
+}
+
+.container {
+    font-family: Roboto Regular Font;
+    margin: 0;
+}
