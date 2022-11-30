@@ -1,7 +1,6 @@
 .button {  
 border-radius: 3px;
-box-shadow: inset 0 2px 6px rgba(0, 0, 0, .16);
-height: 36px;
+ height: 36px;
 overflow: hidden;
 margin-right: 10px;
 }
@@ -9,12 +8,19 @@ margin-right: 10px;
 .button__addProperty {
     background-color: #1aa4c8;
     color: #fff;
-    border: none;
+    border: 1px solid #1aa4c8;
+    display: flex;
+    align-items: center;
+}
+
+.button__addProperty:hover {
+    cursor: pointer;
 }
 
 .button__import {
-    border: none;
+    border: 1px solid #fff;
      background-color: #ffffff;
+    
 }
 
 .button__deleteProperty {

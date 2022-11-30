@@ -1,0 +1,115 @@
+.icon {
+    margin: 12px;
+}
+.icon__noti {
+    background: url('../../assets/UI/icon/qlts-icon.svg') no-repeat -332px -109px;
+	width: 16px;
+	height: 20px;
+}
+
+.icon__menu {
+    background: url('../../assets/UI/icon/qlts-icon.svg') no-repeat -199px -23px;
+	width: 18px;
+	height: 18px;
+}
+
+.icon__help {
+    background: url('../../assets/UI/icon/qlts-icon.svg') no-repeat -67px -67px;
+	width: 18px;
+	height: 18px;
+}
+
+.icon__account {
+    background: url('../../assets/UI/icon/qlts-icon.svg') no-repeat -23px -23px;
+	width: 18px;
+	height: 18px;
+}
+
+.icon__dropdown {
+    background: url('../../assets/UI/icon/qlts-icon.svg') no-repeat -72px -338px;
+	width: 8px;
+	height: 5px;
+    margin-right: 0;
+}
+
+.icon__import {
+    background: url('../../assets/UI/icon/qlts-icon.svg') no-repeat -287px -111px;
+	width: 18px;
+	height: 17px;
+}
+
+.icon__deleteProperty {
+    background: url('../../assets/UI/icon/qlts-icon.svg') no-repeat -463px -111px;
+    width: 18px;
+	height: 18px;
+}
+
+.icon__add {
+    background: url('../../assets/UI/icon/qlts-icon.svg') no-repeat -204px -424px;
+	width: 8px;
+	height: 8px;
+}
+
+.icon__search {
+    background: url('../../assets/UI/icon/qlts-icon.svg') no-repeat -243px -23px;
+	width: 18px;
+	height: 18px;
+    position: absolute;
+}
+
+.icon__filter {
+    background: url('../../assets/UI/icon/qlts-icon.svg') no-repeat -244px -68px;
+	width: 16px;
+	height: 16px;
+    position: absolute;
+}
+
+.icon__arrow--down {
+    background: url('../../assets/UI/icon/qlts-icon.svg') no-repeat -72px -338px;
+	width: 8px;
+	height: 5px;
+    position: absolute;
+    right: 8px;
+}
+
+.icon__item1 {
+	background: url('../../assets/UI/icon/qlts-icon.svg') no-repeat -21px -153px;
+	width: 22px;
+	height: 22px;
+}
+
+.icon__item2 {
+	background: url('../../assets/UI/icon/qlts-icon.svg') no-repeat -65px -153px;
+	width: 22px;
+	height: 23px;
+}
+
+.icon__item3 {
+	background: url('../../assets/UI/icon/qlts-icon.svg') no-repeat -110px -153px;
+	width: 21px;
+	height: 23px;
+}
+
+.icon__item4 {
+	background: url('../../assets/UI/icon/qlts-icon.svg') no-repeat -153px -153px;
+	width: 22px;
+	height: 22px;
+}
+
+.icon__item5 {
+	background: url('../../assets/UI/icon/qlts-icon.svg') no-repeat -197px -155px;
+	width: 22px;
+	height: 18px;
+}
+
+.icon__item6 {
+	background: url('../../assets/UI/icon/qlts-icon.svg') no-repeat -241px -153px;
+	width: 22px;
+	height: 22px;
+}
+
+.icon__item7 {
+	background: url('../../assets/UI/icon/qlts-icon.svg') no-repeat -329px -153px;
+	width: 22px;
+	height: 22px;
+}
