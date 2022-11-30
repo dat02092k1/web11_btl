@@ -1,12 +1,25 @@
-<script setup>
+<script>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import Header from "./components/UI/Header.vue"
+import Sidebar from "./components/UI/Sidebar.vue"
+import Main from "./components/UI/Main.vue"
+
+export default {
+  name: "App",
+  components: {
+    Header,
+    Sidebar,
+    Main
+  }
+}
 </script>
 
 <template>
 <div class="container">
-  <div class="sidebar">sidebar</div>
-  <div class="main">main</div>
+  <Sidebar/>
+  <Header />
+  <Main/>
 </div>
 </template>
 
