@@ -1,6 +1,11 @@
 .icon {
     margin: 12px;
 }
+
+.icon:hover {
+	cursor: pointer;
+}
+
 .icon__noti {
     background: url('../../assets/UI/icon/qlts-icon.svg') no-repeat -332px -109px;
 	width: 16px;

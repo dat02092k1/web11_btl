@@ -13,7 +13,7 @@ export default {
     <div class="header__page">
       <div class="finance__page">Sở tài chính</div>
       <div class="date__page">
-        <input class="input__date" type="number"  id="points" name="points" step="1">
+        <input class="input__date" type="number" placeholder="Năm" id="points" name="points" step="1">
       </div>
       <div class="icon icon__noti"></div>
       <div class="icon icon__menu"></div>
