@@ -1,0 +1,59 @@
+.dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.626);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dialog-wrapper {
+    position: absolute;
+    width: 600px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 4px;
+  }
+  .dialog__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 20px 16px;
+    align-items: center;
+  }
+
+  .icon__close {
+    background: url('../../assets/UI/icon/qlts-icon.svg') no-repeat -375px -287px;
+	width: 18px;
+	height: 18px;
+    margin-right: 16px;
+  }
+
+  .dialog__body {
+    padding: 0 0 20px 16px;
+  }
+
+  .form__left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+  }
+
+  .form__mid {
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+  }
+
+  .form__right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  span {
+    color: red;
+  }
+
+ 

@@ -1,10 +1,10 @@
 <script>
 export default {
-  name: 'Header',
+  name: "Header",
   props: {
-    msg: String
-  }
-}
+    msg: String,
+  },
+};
 </script>
 
 <template>
@@ -13,14 +13,21 @@ export default {
     <div class="header__page">
       <div class="finance__page">Sở tài chính</div>
       <div class="date__page">
-        <input class="input__date" type="number" placeholder="Năm" id="points" name="points" step="1">
+        <input
+          class="input__date"
+          type="number"
+          placeholder="Năm"
+          id="points"
+          name="points"
+          step="1"
+        />
       </div>
       <div class="icon icon__noti"></div>
       <div class="icon icon__menu"></div>
       <div class="icon icon__help"></div>
       <div class="account-info">
         <div class="icon icon__account"></div>
-      <div class="icon icon__dropdown"></div>
+        <div class="icon icon__dropdown"></div>
       </div>
     </div>
   </div>
@@ -37,9 +44,11 @@ export default {
 
 .finance__page {
   margin-right: 21px;
+  font-weight: 500;
+  color: #001031;
 }
 
 .date__page {
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 </style>

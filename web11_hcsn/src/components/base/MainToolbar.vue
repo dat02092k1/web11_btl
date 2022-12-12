@@ -1,9 +1,13 @@
 <script>
 export default {
   name: "MainToolbar",
-  props: {
-    msg: String,
-  },
+  props:
+    ["onClickFunction"],
+  methods: {
+    showPopup() {
+      this.$emit("onAddClick");
+    }
+  }
 };
 </script>
 
@@ -41,8 +45,9 @@ export default {
         
       </div>
       <div class="main__toolbar--right">
-        <button class="button button__addProperty">
-          <div class="icon icon__add"></div>
+        <button  @click="showPopup" class="button button__addProperty">
+          <div class="icon icon__add">
+          </div>
           <div class="add__title">Thêm tài sản</div>
         </button>
         <button class="button button__import">
