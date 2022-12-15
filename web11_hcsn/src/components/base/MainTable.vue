@@ -129,100 +129,14 @@ export default {
         },
       ],
       isShowIcon: false
-      // data: [
-      //     {
-      //       titleLabel: "Lao động tiên tiến",
-      //       titleCode: "LĐTTCH",
-      //       rewardCandidate: ["Cá nhân", "Tập thể"],
-      //       rewardLevel: "Cấp tỉnh/tương đương",
-      //       rewardType: ["Thường xuyên", "Theo đợt"],
-      //       rewardStatus: ["Sử dụng", "Ngừng sử dụng"],
-      //       checked: false,
-      //     },
-      //     {
-      //       titleLabel: "Tập thể lao động tiên tiến",
-      //       titleCode: "TTLĐTT",
-      //       rewardCandidate: ["Cá nhân", "Tập thể"],
-      //       rewardLevel: "Cấp nhà nước",
-      //       rewardType: ["Thường xuyên", "Theo đợt"],
-      //       rewardStatus: ["Sử dụng", "Ngừng sử dụng"],
-      //       checked: false,
-      //     },
-      //     {
-      //       titleLabel: "Chiến sĩ thi đua cấp bộ",
-      //       titleCode: "CSTĐCB",
-      //       rewardCandidate: ["Cá nhân", "Tập thể"],
-      //       rewardLevel: "Cấp tỉnh/tương đương",
-      //       rewardType: ["Thường xuyên", "Theo đợt"],
-      //       rewardStatus: ["Sử dụng", "Ngừng sử dụng"],
-      //       checked: false,
-      //     },
-      //     {
-      //       titleLabel: "Cờ thi đua của chính phủ",
-      //       titleCode: "CTĐCCP",
-      //       rewardCandidate: ["Cá nhân", "Tập thể"],
-      //       rewardLevel: "Cấp huyện/tương đương",
-      //       rewardType: ["Thường xuyên", "Theo đợt"],
-      //       rewardStatus: ["Sử dụng", "Ngừng sử dụng"],
-      //       checked: false,
-      //     },
-      //     {
-      //       titleLabel: "Chiến sĩ thi đua cấp tỉnh",
-      //       titleCode: "CSTĐCT",
-      //       rewardCandidate: ["Cá nhân", "Tập thể"],
-      //       rewardLevel: "Cấp xã/tương đương",
-      //       rewardType: ["Thường xuyên", "Theo đợt"],
-      //       rewardStatus: ["Sử dụng", "Ngừng sử dụng"],
-      //       checked: false,
-      //     },
-      //     {
-      //       titleLabel: "Chiến sĩ thi đua toàn quốc",
-      //       titleCode: "CSTĐTQ",
-      //       rewardCandidate: ["Cá nhân", "Tập thể"],
-      //       rewardLevel: "Cấp huyện/tương đương",
-      //       rewardType: ["Thường xuyên", "Theo đợt"],
-      //       rewardStatus: ["Sử dụng", "Ngừng sử dụng"],
-      //       checked: false,
-      //     },
-      //     {
-      //       titleLabel: "Lao động xuất sắc cấp tỉnh",
-      //       titleCode: "LĐXSCT",
-      //       rewardCandidate: ["Cá nhân", "Tập thể"],
-      //       rewardLevel: "Cấp tỉnh/tương đương",
-      //       rewardType: ["Thường xuyên", "Theo đợt"],
-      //       rewardStatus: ["Sử dụng", "Ngừng sử dụng"],
-      //       checked: false,
-      //     },
-      //     {
-      //       titleLabel: "Lao động tiên tiến",
-      //       titleCode: "LĐTTCH",
-      //       rewardCandidate: ["Cá nhân", "Tập thể"],
-      //       rewardLevel: "Cấp nhà nước",
-      //       rewardType: ["Thường xuyên", "Theo đợt"],
-      //       rewardStatus: ["Sử dụng", "Ngừng sử dụng"],
-      //       checked: false,
-      //     },
-      //     {
-      //       titleLabel: "Cờ thi đua của chính phủ",
-      //       titleCode: "CTĐCCP",
-      //       rewardCandidate: ["Cá nhân", "Tập thể"],
-      //       rewardLevel: "Cấp huyện/tương đương",
-      //       rewardType: ["Thường xuyên", "Theo đợt"],
-      //       rewardStatus: ["Sử dụng", "Ngừng sử dụng"],
-      //       checked: false,
-      //     },
-      //     {
-      //       titleLabel: "Chiến sĩ thi đua cơ sở",
-      //       titleCode: "CSTĐCS",
-      //       rewardCandidate: ["Cá nhân", "Tập thể"],
-      //       rewardType: ["Thường xuyên", "Theo đợt"],
-      //       rewardStatus: ["Sử dụng", "Ngừng sử dụng"],
-      //       rewardLevel: "Cấp nhà nước",
-      //       checked: false,
-      //     },
-      //   ],
+      
     };
   },
+  methods: {
+    showIcon() {
+      this.isShowIcon = !this.isShowIcon;
+    }
+  }
 };
 </script>
 
@@ -236,19 +150,19 @@ export default {
           <input class="" type="checkbox" />
         </th>
         <th>STT</th>
-        <th>Mã tài sản</th>
-        <th>Tên tài sản</th>
-        <th>Loại tài sản</th>
-        <th>Bộ phận sử dụng</th>
+        <th class="text-align--left">Mã tài sản</th>
+        <th class="text-align--left">Tên tài sản</th>
+        <th class="text-align--left">Loại tài sản</th>
+        <th class="text-align--left">Bộ phận sử dụng</th>
         <th>Số lượng</th>
-        <th class="text-align--right">Nguyên giá</th>
-        <th>HM/KH lũy kế</th>
+        <th class="text-align--left">Nguyên giá</th>
+        <th class="text-align--left">HM/KH lũy kế</th>
         <th>Giá trị còn lại</th>
         <th>Chức năng</th>
       </tr>
         </thead>
         <tbody>
-          <tr class="" v-for="(item, index) in data" :key="index">
+          <tr class="" v-for="(item, index) in data" :key="index" @change="showIcon">
           <td class="checkbox">
             <input class="" type="checkbox" />
           </td>
@@ -262,9 +176,11 @@ export default {
           <td>{{ item.cummulative }}</td>
           <td>{{ item.residualValue }}</td>
           <td>
-            <div class="icon__show" v-show="isShowIcon">
-              <div class="icon__edit"></div>
+            <div class="icon__show" >
+              <div class="icon">
+                <div class="icon__edit"></div>
               <div class="icon__delete"></div>
+              </div>
             </div>
           </td>
         </tr>

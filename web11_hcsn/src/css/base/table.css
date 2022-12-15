@@ -118,7 +118,8 @@ tr {
 }
 
 td, th {
-  padding: 0 16px;
+  padding-left: 17px;
+  
 }
 
 th{
@@ -156,5 +157,33 @@ td {
 }
 
 .paging__right div {
-  margin-right: 50px;
+  margin-right: 39px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.icon__show {
+  display: none;
+  align-items: center;
+}
+
+tr:hover .icon__show {
+  display: inline-block;
+}
+
+.icon__edit {
+  background: url("../../assets/UI/icon/qlts-icon.svg") no-repeat -156px -68px;
+  width: 16px;
+  height: 16px;
+  margin: 0 5px;
+}
+
+.icon__delete {
+  background: url("../../assets/UI/icon/qlts-icon.svg") no-repeat -244px -112px;
+  width: 16px;
+  height: 16px;
+  margin: 0 5px;
 }

@@ -16,6 +16,9 @@ export default {
   methods: {
     onShowDialog() {
       this.isShowDetails = true;
+    },
+    onHideDialog() {
+      this.isShowDetails = false;
     }
   },
   data() {
@@ -31,7 +34,7 @@ export default {
     <div class="page">
       <MainToolbar @onAddClick="onShowDialog" />
     <MainTable/>
-    <PropertyDetails v-show="isShowDetails" />
+    <PropertyDetails :hideDialog="onHideDialog" v-if="isShowDetails" />
     </div>
   </div>
 </template>
