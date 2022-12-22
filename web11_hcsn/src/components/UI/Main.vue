@@ -2,6 +2,9 @@
 import MainToolbar from '../base/MainToolbar.vue';
 import MainTable from '../base/MainTable.vue';
 import PropertyDetails from '../base/PropertyDetails.vue';
+import LoadingProgress from '../base/LoadingProgress.vue';
+
+import { usePropStore } from "../../stores/store.js";
 
 export default {
   name: "Main",
@@ -11,19 +14,24 @@ export default {
   components: {
     MainToolbar,
     MainTable,
-    PropertyDetails
+    PropertyDetails,
+    LoadingProgress
   },
   methods: {
-    onShowDialog() {
-      this.isShowDetails = true;
-    },
+
     onHideDialog() {
       this.isShowDetails = false;
+    },
+    showDialogDetails(title) {
+      this.isShowDetails = true;
+      this.titleSelected = title;
     }
   },
   data() {
     return {
-      isShowDetails: false
+      // isShowDetails: false,
+      titleSelected: {},
+      useProp: usePropStore(),      
     }
   }
 };
@@ -33,9 +41,10 @@ export default {
   <div class="main">
     <div class="page">
       <MainToolbar @onAddClick="onShowDialog" />
-    <MainTable/>
-    <PropertyDetails :hideDialog="onHideDialog" v-if="isShowDetails" />
+    <MainTable :funcShowDialog="showDialogDetails" />
+    <PropertyDetails :titleSelected="titleSelected" :hideDialog="onHideDialog" v-if="useProp.isShowDetails" />
     </div>
+    <LoadingProgress v-show="this.useProp.isShowLoading"/>
   </div>
 </template>
 

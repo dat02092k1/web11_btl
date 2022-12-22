@@ -5,6 +5,9 @@ overflow: hidden;
 margin-right: 10px;
 }
 
+.button:hover {
+    cursor: pointer;
+}
 .button__addProperty {
     background-color: #1aa4c8;
     color: #fff;
@@ -15,6 +18,7 @@ margin-right: 10px;
 
 .button__addProperty:hover {
     cursor: pointer;
+    background-color: #28b7dc;
 }
 
 .button__import {

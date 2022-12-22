@@ -1,11 +1,16 @@
 <script>
+import { usePropStore } from "../../stores/store.js";
+
 export default {
   name: "MainToolbar",
   props:
     ["onClickFunction"],
   methods: {
-    showPopup() {
-      this.$emit("onAddClick");
+    
+  },
+  data() {
+    return {
+      useProp: usePropStore(),      
     }
   }
 };
@@ -45,15 +50,15 @@ export default {
         
       </div>
       <div class="main__toolbar--right">
-        <button  @click="showPopup" class="button button__addProperty">
-          <div class="icon icon__add">
-          </div>
-          <div class="add__title">Thêm tài sản</div>
+        <button  @click="this.useProp.showDialogDetails" class="button button__addProperty">
+          <!-- <div class="icon icon__add">
+          </div> -->
+          <div title="Thêm tài sản" class="add__title"> <span style="font-size: 15px;">+</span> Thêm tài sản</div>
         </button>
-        <button class="button button__import">
+        <button title="import" class="button button__import">
           <div class="icon__import"></div>
         </button>
-        <button class="button button__deleteProperty">
+        <button title="export" class="button button__deleteProperty">
           <div class="icon__deleteProperty"></div>
         </button>
       </div>
@@ -96,5 +101,9 @@ export default {
 .main__toolbar--right {
   display: flex;
   align-items: center;
+}
+
+.add__title {
+  padding: 9px 11px;
 }
 </style>
